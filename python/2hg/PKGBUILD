@@ -1,0 +1,41 @@
+# Maintainer: Kwpolska <kwpolska@kwpolska.tk>
+pkgname=python2-tEmplate-hg
+_pyname=tEmplate
+pkgver=20130109
+pkgrel=1
+pkgdesc='INSERT DESCRIPTION HERE.  (hg version)'
+arch=('any')
+url='http://tEmplate.com/'
+license=('???')
+depends=('python2')
+makedepends=('mercurial')
+options=(!emptydirs)
+provides=('python2-tEmplate')
+conflicts=('python2-tEmplate')
+
+_hgroot=https://bitbucket.org/AUTHOR/tEmplate
+_hgrepo=tEmplate
+
+package() {
+  cd "${srcdir}"
+  msg "Connecting to Mercurial server...."
+
+  if [[ -d "${_hgrepo}" ]]; then
+    cd "${_hgrepo}"
+    hg pull -u
+    msg "The local files are updated."
+  else
+    hg clone "${_hgroot}" "${_hgrepo}"
+  fi
+
+  msg "Mercurial checkout done or server timeout"
+  msg "Starting build..."
+
+  rm -rf "${srcdir}/${_hgrepo}-build"
+  cp -r "${srcdir}/${_hgrepo}" "${srcdir}/${_hgrepo}-build"
+  cd "${srcdir}/${_hgrepo}-build"
+
+  python2 setup.py install --root="${pkgdir}/" --optimize=1
+}
+
+# vim:set ts=2 sw=2 et:
