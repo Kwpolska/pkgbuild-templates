@@ -1,0 +1,34 @@
+# Maintainer: Kwpolska <kwpolska@kwpolska.tk>
+pkgname=tEmplate-hg
+_hgname=tEmplate
+pkgver=20130109
+pkgrel=1
+pkgdesc='INSERT DESCRIPTION HERE.  (hg version)'
+arch=('any')
+url='http://tEmplate.com/'
+license=('???')
+depends=()
+makedepends=('make' 'mercurial')
+options=(!emptydirs)
+provides=('tEmplate')
+conflicts=('tEmplate')
+source=("hg+ssh://hg@bitbucket.org/AUTHOR/${_hgname}")
+md5sums=('SKIP')
+
+build() {
+  cd "${srcdir}/${_hgname}"
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd "${srcdir}/${_hgname}"
+  make DESTDIR="${pkgdir}" install
+}
+
+pkgver() {
+  cd "${srcdir}/${_hgname}"
+  hg identify -ni | awk 'BEGIN{OFS=".";} {print $2,$1}'
+}
+
+# vim:set ts=2 sw=2 et:
