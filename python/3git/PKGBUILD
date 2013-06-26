@@ -13,7 +13,7 @@ makedepends=('git')
 options=(!emptydirs)
 provides=('python-tEmplate')
 conflicts=('python-tEmplate')
-sources=("git://github.com/AUTHOR/${_gitname}.git")
+source=("git://github.com/AUTHOR/${_gitname}.git")
 md5sums=('SKIP')
 
 package() {
