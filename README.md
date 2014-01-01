@@ -5,7 +5,7 @@ are free to use, licensed under a custom BSD-like license.
 
 License
 =======
-Copyright © 2013, Kwpolska.
+Copyright © 2013–2014, Kwpolska.
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
