@@ -9,7 +9,7 @@ url='http://tEmplate.com/'
 license=('???')
 depends=('python2')
 options=(!emptydirs)
-source=("http://pypi.python.org/packages/source/$(echo ${_pyname} | cut -c1)/${_pyname}/${_pyname}-${pkgver}.tar.gz")
+source=("http://pypi.python.org/packages/source/${_pyname:0:1}/${_pyname}/${_pyname}-${pkgver}.tar.gz")
 md5sums=('01189998819999197253aa0118999881')
 
 package() {
