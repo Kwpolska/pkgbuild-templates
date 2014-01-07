@@ -28,7 +28,7 @@ package() {
 
 pkgver() {
   cd "${srcdir}/${_gitname}"
-  git describe --always | sed 's/-/_/g;s/v//'
+  git describe --long | sed -E 's/([^-]*-g)/r\1/;s/-/./g'
 }
 
 # vim:set ts=2 sw=2 et:
