@@ -1,4 +1,4 @@
-# Maintainer: Kwpolska <kwpolska@kwpolska.tk>
+# Maintainer: Chris “Kwpolska” Warrick <aur@chriswarrick.com>
 pkgname=python-tEmplate-git
 _pyname=tEmplate
 _gitname=tEmplate

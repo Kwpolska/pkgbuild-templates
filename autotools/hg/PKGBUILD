@@ -1,4 +1,4 @@
-# Maintainer: Kwpolska <kwpolska@kwpolska.tk>
+# Maintainer: Chris “Kwpolska” Warrick <aur@chriswarrick.com>
 pkgname=tEmplate-hg
 _hgname=tEmplate
 pkgver=20130109
