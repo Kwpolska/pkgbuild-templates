@@ -1,18 +1,18 @@
 PKGBUILD templates
 ==================
-Those are sample PKGBUILDs, created by Chris “Kwpolska” Warrick.  They
+Those are sample PKGBUILDs, created by Chris Warrick.  They
 are free to use, licensed under a custom BSD-like license.
 
 License
 =======
-Copyright © 2013–2014, Chris “Kwpolska” Warrick.
+Copyright © 2013–2015, Chris Warrick.
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
-1. Redistributions of *the whole repository* must retain the above
+1. Redistributions of *the entire repository* must retain the above
    copyright notice, this list of conditions, and the following
    disclaimer.
 
