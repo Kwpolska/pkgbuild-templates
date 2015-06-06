@@ -2,18 +2,18 @@
 pkgname=python-tEmplate-hg
 _pyname=tEmplate
 _hgname=tEmplate
-pkgver=20130109
+pkgver=20150606
 pkgrel=1
-pkgdesc='INSERT DESCRIPTION HERE.  (hg version)'
+pkgdesc='INSERT DESCRIPTION HERE. (hg version)'
 arch=('any')
 url='http://tEmplate.com/'
 license=('???')
-depends=('python')
+depends=('python' 'python-setuptools')
 makedepends=('mercurial')
 options=(!emptydirs)
 provides=('python-tEmplate')
 conflicts=('python-tEmplate')
-source=("hg+ssh://hg@bitbucket.org/AUTHOR/${_hgname}")
+source=("hg+https://bitbucket.org/AUTHOR/${_hgname}")
 md5sums=('SKIP')
 
 package() {

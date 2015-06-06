@@ -2,13 +2,13 @@
 pkgname=python-tEmplate-git
 _pyname=tEmplate
 _gitname=tEmplate
-pkgver=20130109
+pkgver=20150606
 pkgrel=1
-pkgdesc='INSERT DESCRIPTION HERE.  (git version)'
+pkgdesc='INSERT DESCRIPTION HERE. (git version)'
 arch=('any')
 url='http://tEmplate.com/'
 license=('???')
-depends=('python')
+depends=('python' 'python-setuptools')
 makedepends=('git')
 options=(!emptydirs)
 provides=('python-tEmplate')
@@ -24,7 +24,7 @@ package() {
 
 pkgver() {
   cd "${srcdir}/${_gitname}"
-  git describe --long | sed -E 's/([^-]*-g)/r\1/;s/-/./g'
+  git describe --long | sed -E 's/([^-]*-g)/r\1/;s/-/./g;s/^v//'
 }
 
 # vim:set ts=2 sw=2 et:
