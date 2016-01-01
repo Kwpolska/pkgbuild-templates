@@ -2,7 +2,7 @@
 pkgname=python-tEmplate-hg
 _pyname=tEmplate
 _hgname=tEmplate
-pkgver=20150606
+pkgver=20160101
 pkgrel=1
 pkgdesc='INSERT DESCRIPTION HERE. (hg version)'
 arch=('any')
