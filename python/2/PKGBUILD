@@ -9,7 +9,7 @@ url='http://tEmplate.com/'
 license=('???')
 depends=('python2' 'python2-setuptools')
 options=(!emptydirs)
-source=("https://pypi.io/packages/source/${_pyname:0:1}/${_pyname}/${_pyname}-${pkgver}.tar.gz")
+source=("https://files.pythonhosted.org/packages/source/${_pyname:0:1}/${_pyname}/${_pyname}-${pkgver}.tar.gz")
 md5sums=('01189998819999197253aa0118999881')
 
 package() {
