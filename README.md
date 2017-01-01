@@ -5,7 +5,7 @@ are free to use, licensed under a custom BSD-like license.
 
 License
 =======
-Copyright © 2013-2016, Chris Warrick.
+Copyright © 2013-2017, Chris Warrick.
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
